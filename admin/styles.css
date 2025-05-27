@@ -1,0 +1,194 @@
+/* Reset & Base */
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between logo and title */
+}
+
+.logo {
+  width: 40px; /* Adjust the size of the logo */
+  height: auto;
+}
+
+.app-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+.container {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 0.75rem 1rem;
+}
+.menu-btn {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.app-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #007bff;
+}
+
+/* Tabs */
+.tab-nav {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.tab-nav .tab {
+  flex: 1;
+  text-align: center;
+  padding: 0.75rem;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+.tab-nav .tab.active {
+  background-color: #ddd;
+  font-weight: bold;
+}
+
+/* FILTERS */
+.filters {
+  margin: 1.5rem 0;
+}
+
+.filters h2 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.filter-tags,
+.price-range {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter-tags button,
+.price-range button {
+  background: #f1f1f1;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.3s ease;
+}
+
+.filter-tags button:hover,
+.price-range button:hover {
+  background: #007bff;
+  color: white;
+}
+
+/* APARTMENT LIST */
+.apartment-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+}
+
+.apartment-card {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 1rem;
+  background: white;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.apartment-card:hover {
+  transform: scale(1.03);
+}
+
+.img-placeholder {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+  margin-right: 1rem;
+}
+
+.img-placeholder img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.apartment-info h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (min-width: 768px) {
+  .apartment-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  .app-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .apartment-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+

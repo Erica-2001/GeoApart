@@ -1,0 +1,108 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Center the phone frame on the page */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f2f5;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Phone Frame */
+.phone-frame {
+  width: 360px;
+  height: 740px;
+  background: #fff;
+  border: 2px solid #333;
+  border-radius: 40px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Notch area */
+.phone-notch {
+  height: 30px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.time {
+  font-size: 14px;
+}
+.status-icons i {
+  margin-left: 10px;
+}
+
+/* App Header */
+.app-header {
+  display: flex;
+  align-items: center;
+  background: #343a40;
+  color: #fff;
+  padding: 10px 15px;
+}
+.menu-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.app-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Tabs */
+.app-tabs {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.tab {
+  flex: 1;
+  padding: 12px 0;
+  background: #f9f9f9;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+.tab.active {
+  background: #e2e6ea;
+  font-weight: bold;
+}
+
+/* App Content */
+.app-content {
+  position: relative;
+  height: calc(100% - 30px - 48px - 48px); /* subtract notch + header + tabs height */
+  overflow: hidden;
+}
+.content-section {
+  display: none;
+  height: 100%;
+  overflow-y: auto;
+  padding: 15px;
+}
+.content-section.active {
+  display: block;
+}
+
+/* Map Container */
+#map {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
