@@ -1,5 +1,5 @@
 # GeoApart
-**Capstone Project 24-007**
+**Capstone Project ECE 24-007**
 
 ### Author(s) of the Project:
 - Noah Andrea D. Ariola  
@@ -8,6 +8,9 @@
 - Janine Mae A. Ingles  
 - Lizette Angela D. Ramos
 
+### Co-Author(s) of the Project:
+- Dr. Antonette V. Chua
+  
 ---
 
 © 2025 **GeoApart**. All rights reserved.
